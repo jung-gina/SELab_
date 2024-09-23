@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Software Engineering Lab - Projects</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: #ffffff;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid #eaeaea;
+      }
+
+      header h1 {
+        margin: 0;
+      }
+
+      nav {
+        margin-top: 20px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+      .container {
+        margin: 20px auto;
+        max-width: 1200px;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .section-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #eaeaea;
+        padding-bottom: 10px;
+      }
+
+      .project {
+        margin-bottom: 30px;
+      }
+
+      .project h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .project p {
+        margin: 0;
+        color: #555;
+      }
+
+      .project img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Software Engineering Lab</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="project.html">Research</a></li>
+          <li><a href="publication.html">Publications</a></li>
+          <li><a href="#">Lab Activity</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <!-- Current Projects -->
+      <div class="section-title">Current Projects</div>
+
+      <div class="project">
+        <img src="ai_platform.jpg" alt="AI Platform" />
+        <h3>Machine Learning Training and Inference</h3>
+        <p>
+          In recent years, many systems for machine learning (e.g., TensorFlow,
+          Caffe2, MXNet) have been proposed to support sophisticated deep
+          learning models and a large amount of data. Yet, such systems lack
+          parallelizing machine learning models easily, handling complex neural
+          networks intuitively, tuning system configurations automatically, etc.
+          We perform research on improving the performance and expressiveness of
+          machine learning frameworks.
+        </p>
+      </div>
+
+      <div class="project">
+        <img src="data_processing.jpg" alt="Data Processing" />
+        <h3>Flexible and Efficient Data Processing</h3>
+        <p>
+          The data processing system domain has evolved for a wide variety of
+          resource and job characteristics. However, it is hard to evolve
+          current data processing systems to adapt to applications with new
+          resources and job characteristics. To address this problem, we are
+          building a flexible and extensible data processing system and
+          designing various instantiation policies for the system.
+        </p>
+      </div>
+
+      <!-- Past Projects -->
+      <div class="section-title">Past Projects</div>
+
+      <div class="project">
+        <img src="apache_reef.jpg" alt="Apache REEF" />
+        <h3>Apache REEF</h3>
+        <p>
+          Apache REEF (Retainable Evaluator Execution Framework) is a library
+          that simplifies development of applications running on cluster
+          resource managers. REEF is an Apache Software Foundation (ASF)
+          Top-Level Project (TLP) and being actively developed by committers
+          from many institutions including Microsoft and Seoul National
+          University.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
