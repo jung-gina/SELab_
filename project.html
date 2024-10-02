@@ -60,7 +60,16 @@
       }
 
       .project {
+        display: flex;
+        align-items: center;
         margin-bottom: 30px;
+      }
+
+      .project img {
+        max-width: 100px;
+        height: auto;
+        margin-right: 20px;
+        border-radius: 8px;
       }
 
       .project h3 {
@@ -73,10 +82,8 @@
         color: #555;
       }
 
-      .project img {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 10px;
+      .project-content {
+        flex: 1;
       }
     </style>
   </head>
@@ -122,14 +129,18 @@
               projectDiv.appendChild(img);
             }
 
+            const contentDiv = document.createElement('div');
+            contentDiv.classList.add('project-content');
+
             const title = document.createElement('h3');
             title.textContent = project.title;
-            projectDiv.appendChild(title);
+            contentDiv.appendChild(title);
 
             const description = document.createElement('p');
             description.textContent = project.description;
-            projectDiv.appendChild(description);
+            contentDiv.appendChild(description);
 
+            projectDiv.appendChild(contentDiv);
             container.appendChild(projectDiv);
           });
 
@@ -150,14 +161,18 @@
               projectDiv.appendChild(img);
             }
 
+            const contentDiv = document.createElement('div');
+            contentDiv.classList.add('project-content');
+
             const title = document.createElement('h3');
             title.textContent = project.title;
-            projectDiv.appendChild(title);
+            contentDiv.appendChild(title);
 
             const description = document.createElement('p');
             description.textContent = project.description;
-            projectDiv.appendChild(description);
+            contentDiv.appendChild(description);
 
+            projectDiv.appendChild(contentDiv);
             container.appendChild(projectDiv);
           });
         })
