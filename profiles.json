@@ -1,0 +1,41 @@
+[
+    {
+      "name": "Yun-Ho Kim (김윤호)",
+      "position": "Professor, Department of Computer Science, Hanyang University",
+      "email": "yunhokim@hanyang.ac.kr",
+      "image": "김윤호교수님.png",
+      "education": [
+        "B.S (2007.02) in Computer Science, KAIST",
+        "Ph.D (2017.02) in Computer Science, KAIST",
+        "Postdoctoral Researcher (2017.02-2018.02), SWTV research group, School of Computing, KAIST",
+        "Research Assistant Professor (2018.03-2020.08), School of Computing, KAIST",
+        "Assistant Professor (2020.09-current), Department of Computer Science, Hanyang University"
+      ]
+    },
+    {
+      "name": "Hyun-Min Mo (모현민)",
+      "position": "Ph.D Student",
+      "email": "hyeonminmo@hanyang.ac.kr",
+      "education": [
+        "B.S (2021.02) in Software, Ajou university"
+      ]
+    },
+    {
+      "name": "Gi-Na Jung (정지나)",
+      "position": "M.S Student",
+      "email": "snowgina00@hanyang.ac.kr",
+      "education": [
+        "B.S (2024.08) in Computer Science, Hanyang University",
+        "B.S (2024.08) in Convergence Technology for Advanced Vehicles, Hanyang University"
+      ]
+    },
+    {
+      "name": "Jong-Mun Yang (양종문)",
+      "position": "Undergraduate Research Assistant Student",
+      "email": "keinerr@hanyang.ac.kr",
+      "education": [
+        "B.S (2025.02) in Computer Science, Hanyang University"
+      ]
+    }
+  ]
+  

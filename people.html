@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Software Engineering Lab</title>
+    <link rel="icon" href="김윤호교수님.png" type="image/png">
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -103,89 +104,62 @@
       </nav>
     </header>
 
-    <div class="container">
-      <!-- Byung-Gon Chun Profile -->
-      <div class="profile">
-        <img src="김윤호교수님.png" alt="Yun-Ho Kim" />
-        <h2>Yun-Ho Kim (김윤호)</h2>
-        <p>
-          Professor,
-          <a href="https://cs.hanyang.ac.kr/">Department of Computer Science</a
-          >, Hanyang University
-        </p>
-        <p>CEO, VPlusLab</p>
-        <p>
-          Email:
-          <a href="mailto:yunhokim@hanyang.ac.kr">yunhokim@hanyang.ac.kr</a>
-        </p>
-        <p>
-          Homepage:
-          <a href="https://yunho-kim.github.io" target="_blank"
-            >https://yunho-kim.github.io</a
-          >
-        </p>
-
-        <h3>Education and Experience</h3>
-        <ul class="list">
-          <li>B.S (2007.02) in Computer Science, KAIST</li>
-          <li>Ph.D (2017.02) in Computer Science, KAIST</li>
-          <li>
-            Postdoctoral Researcher (2017.02-2018.02), SWTV research group,
-            School of Computing, KAIST
-          </li>
-          <li>
-            Research Assistant Professor (2018.03-2020.08), School of Computing,
-            KAIST
-          </li>
-          <li>
-            Assistant Professor (2020.09-current), Department of Computer
-            Science, Hanyang University
-          </li>
-        </ul>
-      </div>
-
-      <!-- Hong Gil-dong Profile -->
-      <div class="profile">
-        <h2>Hyun-Min Mo (모현민)</h2>
-        <p>Ph.D Student</p>
-        <p>Email: <a href="mailto:hyeonminmo@hanyang.ac.kr">hyeonminmo@hanyang.ac.kr</a></p>
-
-        <h3>Education and Experience</h3>
-        <ul>
-          <li>B.S (2021.02) in Software, Ajou university</li>
-        </ul>
-      </div>
-
-      <!-- Kim Young-hee Profile -->
-      <div class="profile">
-        <h2>Gi-Na Jung (정지나)</h2>
-        <p>M.S Student</p>
-        <p>
-          Email:
-          <a href="mailto:snowgina00@hanyang.ac.kr">snowgina00@hanyang.ac.kr</a>
-        </p>
-
-        <h3>Education and Experience</h3>
-        <ul>
-          <li>B.S (2024.08) in Computer Science, Hanyang University</li>
-          <li>B.S (2024.08) in Convergence Technology for Advanced Vehicles, Hanyang University</li>
-        </ul>
-      </div>
-
-      <!-- Kim Chul-soo Profile -->
-      <div class="profile">
-        <h2>Jong-Mun Yang (양종문)</h2>
-        <p>Undergraduate Research Assistant Student</p>
-        <p>
-          Email:
-          <a href="mailto:keinerr@hanyang.ac.kr">keinerr@hanyang.ac.kr</a>
-        </p>
-
-        <h3>Education and Experience</h3>
-        <ul>
-          <li>B.S (2025.02) in Computer Science, Hanyang University</li>
-        </ul>
-      </div>
+    <div class="container" id="profiles-container">
+      <!-- Profiles will be dynamically loaded here -->
     </div>
+
+    <script>
+      // Fetch the JSON data and populate the profiles dynamically
+      fetch('profiles.json')
+        .then(response => response.json())
+        .then(data => {
+          const container = document.getElementById('profiles-container');
+
+          data.forEach(profile => {
+            // Create profile section
+            const profileDiv = document.createElement('div');
+            profileDiv.classList.add('profile');
+
+            // Add image if available
+            if (profile.image) {
+              const img = document.createElement('img');
+              img.src = profile.image;
+              img.alt = profile.name;
+              profileDiv.appendChild(img);
+            }
+
+            // Add name and position
+            const name = document.createElement('h2');
+            name.textContent = profile.name;
+            profileDiv.appendChild(name);
+
+            const position = document.createElement('p');
+            position.textContent = profile.position;
+            profileDiv.appendChild(position);
+
+            // Add email
+            const email = document.createElement('p');
+            email.innerHTML = `Email: <a href="mailto:${profile.email}">${profile.email}</a>`;
+            profileDiv.appendChild(email);
+
+            // Add education and experience
+            const educationHeader = document.createElement('h3');
+            educationHeader.textContent = 'Education and Experience';
+            profileDiv.appendChild(educationHeader);
+
+            const educationList = document.createElement('ul');
+            profile.education.forEach(item => {
+              const li = document.createElement('li');
+              li.textContent = item;
+              educationList.appendChild(li);
+            });
+            profileDiv.appendChild(educationList);
+
+            // Append profile to the container
+            container.appendChild(profileDiv);
+          });
+        })
+        .catch(error => console.error('Error loading profiles:', error));
+    </script>
   </body>
 </html>

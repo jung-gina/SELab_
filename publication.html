@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Software Engineering Lab - Publications</title>
+    <link rel="icon" href="김윤호교수님.png" type="image/png" />
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -92,104 +93,49 @@
       </nav>
     </header>
 
-    <div class="container">
-      <!-- 2024 Publications -->
-      <div class="year">
-        <h2>2024</h2>
-        <div class="publication">
-          <h3>
-            Maestro: The Analysis-Simulation Integrated Framework for Mixed
-            Reality
-          </h3>
-          <p class="authors">
-            Jingyu Lee, Hyunsoo Kim, Minjae Kim, Byung-Gon Chun, Youngki Lee. To
-            appear in MobiSys 2024.
-          </p>
-        </div>
-        <div class="publication">
-          <h3>Blaze: Holistic Caching for Iterative Data Processing</h3>
-          <p class="authors">
-            Won Wook Song, Jeongyoon Eo, Taegeon Um, Myeongjae Jeon, Byung-Gon
-            Chun. EuroSys 2024, April 2024.
-          </p>
-        </div>
-      </div>
-
-      <!-- 2023 Publications -->
-      <div class="year">
-        <h2>2023</h2>
-        <div class="publication">
-          <h3>
-            Meta-Learning of Prompt Generation for Lightweight Prompt
-            Engineering on Language-Model-as-a-Service
-          </h3>
-          <p class="authors">
-            Hyeonmin Ha, Jihye Lee, Wookje Han, Byung-Gon Chun. EMNLP 2023
-            (Findings), December 2023.
-          </p>
-        </div>
-        <div class="publication">
-          <h3>
-            BPipe: Memory-Balanced Pipeline Parallelism for Training Large
-            Language Models
-          </h3>
-          <p class="authors">
-            Taebum Kim, Hyoungjoo Kim, Gyeong-In Yu, Byung-Gon Chun. ICML 2023
-            (Oral), July 2023.
-          </p>
-        </div>
-        <div class="publication">
-          <h3>
-            Sponge: Fast Reactive Scaling for Stream Processing with Serverless
-            Frameworks
-          </h3>
-          <p class="authors">
-            Won Wook Song, Taegeon Um, Sameh Elnikety, Myeongjae Jeon, Byung-Gon
-            Chun. USENIX ATC 2023, July 2023.
-          </p>
-        </div>
-      </div>
-
-      <!-- 2022 Publications -->
-      <div class="year">
-        <h2>2022</h2>
-        <div class="publication">
-          <h3>OpenNetLab received the best paper award at APNet 2022</h3>
-          <p class="authors">Author names, Journal or Conference name, 2022.</p>
-        </div>
-        <div class="publication">
-          <h3>
-            FlowKV: A Semantic-Aware Store for Large-Scale State Management of
-            Stream Processing Engines
-          </h3>
-          <p class="authors">
-            Gyewon Lee, Jaewoo Maeng, Jinsol Park, Byung-Gon Chun. EuroSys 2023,
-            May 2023.
-          </p>
-        </div>
-      </div>
-
-      <!-- 2021 Publications -->
-      <div class="year">
-        <h2>2021</h2>
-        <div class="publication">
-          <h3>
-            Orca: Efficient Resource Management for Large-Scale AI Workloads
-          </h3>
-          <p class="authors">Author names, Conference name, June 2021.</p>
-        </div>
-      </div>
-
-      <!-- 2020 Publications -->
-      <div class="year">
-        <h2>2020</h2>
-        <div class="publication">
-          <h3>Dataflow Acceleration for Machine Learning</h3>
-          <p class="authors">Author names, Conference name, 2020.</p>
-        </div>
-      </div>
-
-      <!-- Add more years and publications as needed -->
+    <div class="container" id="publication-container">
+      <!-- Publications will be loaded here dynamically -->
     </div>
+
+    <script>
+      // Fetch the JSON data and generate the HTML content dynamically
+      fetch('publications.json')
+        .then((response) => response.json())
+        .then((data) => {
+          const container = document.getElementById('publication-container');
+
+          for (const year in data) {
+            // Create year section
+            const yearSection = document.createElement('div');
+            yearSection.classList.add('year');
+
+            // Add year heading
+            const yearHeading = document.createElement('h2');
+            yearHeading.textContent = year;
+            yearSection.appendChild(yearHeading);
+
+            // Add publications for the year
+            data[year].forEach((publication) => {
+              const pubDiv = document.createElement('div');
+              pubDiv.classList.add('publication');
+
+              const pubTitle = document.createElement('h3');
+              pubTitle.textContent = publication.title;
+              pubDiv.appendChild(pubTitle);
+
+              const pubAuthors = document.createElement('p');
+              pubAuthors.classList.add('authors');
+              pubAuthors.textContent = `${publication.authors}. ${publication.conference}, ${publication.date}.`;
+              pubDiv.appendChild(pubAuthors);
+
+              yearSection.appendChild(pubDiv);
+            });
+
+            // Append the year section to the container
+            container.appendChild(yearSection);
+          }
+        })
+        .catch((error) => console.error('Error loading publications:', error));
+    </script>
   </body>
 </html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Software Engineering Lab</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="김윤호교수님.png" type="image/png">
   </head>
   <body>
     <header>
@@ -31,29 +32,8 @@
 
       <div class="sidebar">
         <h3>Latest Updates</h3>
-        <ul>
-          <li>
-            Blaze's accepted to appear at EuroSys 2024!
-            <span>September 13, 2023</span>
-          </li>
-          <li>
-            BPipe's accepted to appear at ICML 2023! <span>April 29, 2023</span>
-          </li>
-          <li>
-            Sponge's accepted to appear at USENIX ATC 2023!
-            <span>April 28, 2023</span>
-          </li>
-          <li>
-            OpenNetLab received the best paper award at APNet 2022!
-            <span>August 11, 2022</span>
-          </li>
-          <li>
-            FlowKV's accepted to appear at EuroSys 2023!
-            <span>August 11, 2022</span>
-          </li>
-          <li>
-            Orca was accepted to appear at OSDI 2021! <span>June 18, 2022</span>
-          </li>
+        <ul id="updates-list">
+          <!-- Latest updates will be loaded here dynamically -->
         </ul>
       </div>
     </div>
@@ -71,5 +51,30 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      // Fetch the updates JSON data and populate the updates list
+      fetch('updates.json')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          const updatesList = document.getElementById('updates-list');
+          
+          // Limit the number of updates to display (e.g., last 5 updates)
+          const N = 5;
+          const updatesToDisplay = data.slice(-N); // Get the last N updates
+
+          updatesToDisplay.forEach(update => {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `${update.text} <span>${update.date}</span>`;
+            updatesList.appendChild(listItem);
+          });
+        })
+        .catch(error => console.error('Error loading updates:', error));
+    </script>
   </body>
 </html>

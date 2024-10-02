@@ -1,0 +1,22 @@
+{
+    "current": [
+      {
+        "title": "Machine Learning Training and Inference",
+        "description": "In recent years, many systems for machine learning (e.g., TensorFlow, Caffe2, MXNet) have been proposed to support sophisticated deep learning models and a large amount of data. Yet, such systems lack parallelizing machine learning models easily, handling complex neural networks intuitively, tuning system configurations automatically, etc. We perform research on improving the performance and expressiveness of machine learning frameworks.",
+        "image": "ping.jpg"
+      },
+      {
+        "title": "Flexible and Efficient Data Processing",
+        "description": "The data processing system domain has evolved for a wide variety of resource and job characteristics. However, it is hard to evolve current data processing systems to adapt to applications with new resources and job characteristics. To address this problem, we are building a flexible and extensible data processing system and designing various instantiation policies for the system.",
+        "image": "ping.jpg"
+      }
+    ],
+    "past": [
+      {
+        "title": "Apache REEF",
+        "description": "Apache REEF (Retainable Evaluator Execution Framework) is a library that simplifies development of applications running on cluster resource managers. REEF is an Apache Software Foundation (ASF) Top-Level Project (TLP) and being actively developed by committers from many institutions including Microsoft and Seoul National University.",
+        "image": "ping.jpg"
+      }
+    ]
+  }
+  

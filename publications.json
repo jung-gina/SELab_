@@ -1,0 +1,37 @@
+{
+    "2024": [
+      {
+        "title": "Maestro: The Analysis-Simulation Integrated Framework for Mixed Reality",
+        "authors": "Jingyu Lee, Hyunsoo Kim, Minjae Kim, Byung-Gon Chun, Youngki Lee",
+        "conference": "MobiSys 2024",
+        "date": "To appear"
+      },
+      {
+        "title": "Blaze: Holistic Caching for Iterative Data Processing",
+        "authors": "Won Wook Song, Jeongyoon Eo, Taegeon Um, Myeongjae Jeon, Byung-Gon Chun",
+        "conference": "EuroSys 2024",
+        "date": "April 2024"
+      }
+    ],
+    "2023": [
+      {
+        "title": "Meta-Learning of Prompt Generation for Lightweight Prompt Engineering on Language-Model-as-a-Service",
+        "authors": "Hyeonmin Ha, Jihye Lee, Wookje Han, Byung-Gon Chun",
+        "conference": "EMNLP 2023 (Findings)",
+        "date": "December 2023"
+      },
+      {
+        "title": "BPipe: Memory-Balanced Pipeline Parallelism for Training Large Language Models",
+        "authors": "Taebum Kim, Hyoungjoo Kim, Gyeong-In Yu, Byung-Gon Chun",
+        "conference": "ICML 2023 (Oral)",
+        "date": "July 2023"
+      },
+      {
+        "title": "Sponge: Fast Reactive Scaling for Stream Processing with Serverless Frameworks",
+        "authors": "Won Wook Song, Taegeon Um, Sameh Elnikety, Myeongjae Jeon, Byung-Gon Chun",
+        "conference": "USENIX ATC 2023",
+        "date": "July 2023"
+      }
+    ]
+  }
+  

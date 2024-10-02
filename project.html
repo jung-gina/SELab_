@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Software Engineering Lab - Projects</title>
+    <link rel="icon" href="김윤호교수님.png" type="image/png">
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -93,52 +94,74 @@
       </nav>
     </header>
 
-    <div class="container">
-      <!-- Current Projects -->
-      <div class="section-title">Current Projects</div>
-
-      <div class="project">
-        <img src="ai_platform.jpg" alt="AI Platform" />
-        <h3>Machine Learning Training and Inference</h3>
-        <p>
-          In recent years, many systems for machine learning (e.g., TensorFlow,
-          Caffe2, MXNet) have been proposed to support sophisticated deep
-          learning models and a large amount of data. Yet, such systems lack
-          parallelizing machine learning models easily, handling complex neural
-          networks intuitively, tuning system configurations automatically, etc.
-          We perform research on improving the performance and expressiveness of
-          machine learning frameworks.
-        </p>
-      </div>
-
-      <div class="project">
-        <img src="data_processing.jpg" alt="Data Processing" />
-        <h3>Flexible and Efficient Data Processing</h3>
-        <p>
-          The data processing system domain has evolved for a wide variety of
-          resource and job characteristics. However, it is hard to evolve
-          current data processing systems to adapt to applications with new
-          resources and job characteristics. To address this problem, we are
-          building a flexible and extensible data processing system and
-          designing various instantiation policies for the system.
-        </p>
-      </div>
-
-      <!-- Past Projects -->
-      <div class="section-title">Past Projects</div>
-
-      <div class="project">
-        <img src="apache_reef.jpg" alt="Apache REEF" />
-        <h3>Apache REEF</h3>
-        <p>
-          Apache REEF (Retainable Evaluator Execution Framework) is a library
-          that simplifies development of applications running on cluster
-          resource managers. REEF is an Apache Software Foundation (ASF)
-          Top-Level Project (TLP) and being actively developed by committers
-          from many institutions including Microsoft and Seoul National
-          University.
-        </p>
-      </div>
+    <div class="container" id="projects-container">
+      <!-- Projects will be dynamically loaded here -->
     </div>
+
+    <script>
+      // Fetch the JSON data and populate the projects dynamically
+      fetch('projects.json')
+        .then(response => response.json())
+        .then(data => {
+          const container = document.getElementById('projects-container');
+
+          // Load current projects
+          const currentTitle = document.createElement('div');
+          currentTitle.classList.add('section-title');
+          currentTitle.textContent = 'Current Projects';
+          container.appendChild(currentTitle);
+
+          data.current.forEach(project => {
+            const projectDiv = document.createElement('div');
+            projectDiv.classList.add('project');
+
+            if (project.image) {
+              const img = document.createElement('img');
+              img.src = project.image;
+              img.alt = project.title;
+              projectDiv.appendChild(img);
+            }
+
+            const title = document.createElement('h3');
+            title.textContent = project.title;
+            projectDiv.appendChild(title);
+
+            const description = document.createElement('p');
+            description.textContent = project.description;
+            projectDiv.appendChild(description);
+
+            container.appendChild(projectDiv);
+          });
+
+          // Load past projects
+          const pastTitle = document.createElement('div');
+          pastTitle.classList.add('section-title');
+          pastTitle.textContent = 'Past Projects';
+          container.appendChild(pastTitle);
+
+          data.past.forEach(project => {
+            const projectDiv = document.createElement('div');
+            projectDiv.classList.add('project');
+
+            if (project.image) {
+              const img = document.createElement('img');
+              img.src = project.image;
+              img.alt = project.title;
+              projectDiv.appendChild(img);
+            }
+
+            const title = document.createElement('h3');
+            title.textContent = project.title;
+            projectDiv.appendChild(title);
+
+            const description = document.createElement('p');
+            description.textContent = project.description;
+            projectDiv.appendChild(description);
+
+            container.appendChild(projectDiv);
+          });
+        })
+        .catch(error => console.error('Error loading projects:', error));
+    </script>
   </body>
 </html>
