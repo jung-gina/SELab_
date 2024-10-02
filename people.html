@@ -142,6 +142,14 @@
             email.innerHTML = `Email: <a href="mailto:${profile.email}">${profile.email}</a>`;
             profileDiv.appendChild(email);
 
+            if (profile.homepage) {
+              const homepage = document.createElement('a');
+              homepage.href = profile.homepage;
+              homepage.textContent = 'Homepage';
+              homepage.target = '_blank';
+              profileDiv.appendChild(homepage);
+            }
+
             // Add education and experience
             const educationHeader = document.createElement('h3');
             educationHeader.textContent = 'Education and Experience';
