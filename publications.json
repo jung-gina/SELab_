@@ -6,9 +6,44 @@
 
     ],
     "2022" : [
-
+      {
+        "title": "POWER: Program option-aware fuzzer for high bug detection ability",
+        "authors": "A Lee, I Ariq, Y Kim, M Kim",
+        "conference": "IEEE Conference on Software Testing, Verification and Validation (ICST)",
+        "date": "2022"
+      },
+      {
+        "title": "Citrus: Automated unit testing tool for real-world c++ programs",
+        "authors": "RS Herlim, Y Kim, M Kim",
+        "conference": "IEEE Conference on Software Testing, Verification and Validation (ICST)",
+        "date": "2022"
+      },
+      {
+        "title": "Learning‐based mutant reduction using fine‐grained mutation operators",
+        "authors": "Y Kim, S Hong",
+        "conference": "Software Testing, Verification and Reliability 32",
+        "date": "2022"
+      }
     ],
     "2021" : [
+      {
+        "title": "DEMINER: test generation for high test coverage through mutant exploration",
+        "authors": "Y Kim, S Hong",
+        "conference": "Software Testing, Verification and Reliability 31 (1-2), e1715",
+        "date": "2021"
+      },
+      {
+        "title": "Empirical study of effectiveness of evosuite on the sbst 2020 tool competition benchmark",
+        "authors": "RS Herlim, S Hong, Y Kim, M Kim",
+        "conference": "Search-Based Software Engineering: 13th International Symposium (SSBSE)",
+        "date": "2021"
+      },
+      {
+        "title": "Directed Model Checking for Fast Abstract Reachability Analysis",
+        "authors": "N Lee, Y Kim, M Kim, D Ryu, J Baik",
+        "conference": "IEEE Access",
+        "date": "2021"
+      }
 
     ],
     "2020" : [
@@ -34,10 +69,28 @@
         "date": "Aug 2019"
       },
       {
+        "title": "Learning-based Mutant Reduction using Fine-grained Mutation Operators",
+        "authors": "Y. Kim and S. Hong",
+        "conference": "Software Testing, Verification & Reliability (STVR)",
+        "date": "2019"
+      },
+      {
+        "title": "DeMiner: Test Generation for High Test Coverage through Mutant Exploration",
+        "authors": "Y. Kim and S. Hong",
+        "conference": "Software Testing, Verification & Reliability (STVR)",
+        "date": "2019"
+      },
+      {
         "title": "Concolic Testing for High Test Coverage and Reduced Human Effort in Automotive Industry",
         "authors": "Y. Kim, D. Lee, J. Baek, and M. Kim",
-        "conference": "Intl. Conf. on Software Engineering (ICSE) Software Engineering In Practice (SEIP) track,",
+        "conference": "Intl. Conf. on Software Engineering (ICSE) Software Engineering In Practice (SEIP) track",
         "date": "May 2019"
+      },
+      {
+        "title": "Automatic Test Case Generation through Concolic Testing to Improve SW Quality of Defense Weapon System",
+        "authors": "K. Park, H. Song, J. Lee, G. Jo, Y. Kim, and M. Kim",
+        "conference": "Journal of KIISE: Software and Applications, Vol. 46, No. 9",
+        "date": "Nov 2019"
       }
     ],
     "2018" : [
@@ -58,14 +111,74 @@
         "authors": "L. Phan, Y. Kim, M. Kim",
         "conference": "ACM Transactions on Software Engineering and Methodology (TOSEM)",
         "date": "2018"
+      },
+      {
+        "title": "Improving Applicability and Usability of a Concolic Testing Tool CROWN",
+        "authors": "H. Kim, Y. Kim, and M. Kim",
+        "conference": "Journal of KIISE: Software and Applications, Vol. 45, No. 10",
+        "date": "Oct 2018"
+      },
+      {
+        "title": "Automated Capturing and Replaying Unit Inputs of C Programs from System Executions through Static and Dynamic Analysis",
+        "authors": "H. Lim, Y. Kim, and M. Kim",
+        "conference": "Journal of KIISE: Software and Applications, Vol. 45, No. 10",
+        "date": "Oct 2018"
+      },
+      {
+        "title": "A Comparative Study of C Program Mutation Tools for Effective Mutation Analysis: A Case Study of Proteum and Milu",
+        "authors": "Y. Kim, H. Kim, W. Yang, and M. Kim",
+        "conference": "Journal of KIISE: Software and Applications, Vol. 45, No. 4",
+        "date": "Apr 2018"
+      },
+      {
+        "title": "Concolic Testing to Improve SW Quality of Defense Weapon System",
+        "authors": "K. Park, J. Lee, H. Song K. Cho, Y. Kim, and M. Kim",
+        "conference": "Korea Software Congress (KSC)",
+        "date": "Dec 2018"
+      },
+      {
+        "title": "AtomicitySanitizer: Effective Runtime Atomicity Violation Detector for Multithreaded C Programs",
+        "authors": "S. Hong, Y. Kim, M. Kim, S. Yoon, H. Jung, and S. Park",
+        "conference": "Korea Software Congress (KSC)",
+        "date": "Dec 2018"
+      },
+      {
+        "title": "Improvement of Concolic Testing Effectiveness by Supporting Bitfield Symbolic Variable",
+        "authors": "A. Lee, H. Kim, Y. Kim, and M. Kim",
+        "conference": " Korea Computer Congress (KCC)",
+        "date": "Jun 2018"
+      },
+      {
+        "title": " Improving Applicability and User Interface of CREST",
+        "authors": "H. Kim, Y. Kim, and M. Kim",
+        "conference": "Korea Conference on Software Engineering (KCSE)",
+        "date": "Jan 2017"
       }
     ],
     "2017" : [
       {
         "title": "MUSEUM: Debugging Real-World Multilingual Programs Using Mutation Analysis",
         "authors": "S. Hong, T. Kwak, B. Lee, Y. Jeon, B. Ko, Y. Kim, M. Kim",
-        "conference": " Information and Software Technology (IST)",
+        "conference": "Information and Software Technology (IST)",
         "date": "Feb 2017"
+      },
+      {
+        "title": "Automated Unit-test Generation for Detecting Vulnerabilities of Android Kernel Modules",
+        "authors": "Y. Kim and M. Kim",
+        "conference": "Journal of KIISE: Software and Applications, Vol. 44, No. 2",
+        "date": "Feb 2017"
+      },
+      {
+        "title": "Automated Capturing & Replaying Dynamic Unit Inputs of C Programs from System Executions",
+        "authors": "H. Lim, Y. Kim, and M. Kim",
+        "conference": "Korea Software Congress (KSC)",
+        "date": "Dec 2017"
+      },
+      {
+        "title": "COMUT: A Configurable Mutant Generation Tool for C programs for effective and efficient mutation analysis",
+        "authors": "P. Loc, B. Ko, Y. Kim, and M.Kim",
+        "conference": "Korea Software Congress (KSC)",
+        "date": "Dec 2017"
       }
     ],
     "2016" : [
@@ -80,6 +193,36 @@
         "authors": "Won Wook Song, Taegeon Um, Sameh Elnikety, Myeongjae Jeon, Byung-Gon Chun",
         "conference": "USENIX ATC 2022",
         "date": "July 2022"
+      },
+      {
+        "title": "Mutagen4J: Effective Mutant Generation Framework for Java Programs",
+        "authors": "Y. Jeon, Y. Kim, S. Hong, and M. Kim",
+        "conference": "Journal of KIISE: Software and Applications, Vol. 43, No. 9",
+        "date": "Sep 2016"
+      },
+      {
+        "title": "Effective Integer Promotion Bug Detection Technique for Embedded Software",
+        "authors": "Y. Kim, T. Kim, M, Kim, H. Lee, H. Jang, and M. Park",
+        "conference": "Journal of KIISE: Software and Applications, Vol. 43, No. 6",
+        "date": "Jun 2016"
+      },
+      {
+        "title": "A Comparative Study of C Program Mutation Tools for Effective Mutation Analysis: A Case Study of Proteum and Milu",
+        "authors": "Y. Kim, H. Kim, W. Yang, and M. Kim",
+        "conference": "Winter Korea Computer Congress (KCC)",
+        "date": "Dec 2016"
+      },
+      {
+        "title": "Automated Unit-test Generation for Detecting Vulnerabilities of Android Kernel Modules",
+        "authors": "Y. Kim and M. Kim",
+        "conference": "Korea Computer Congress (KCC)",
+        "date": "Jun 2016"
+      },
+      {
+        "title": "Efficient Dynamic Symbolic Execution Search Strategy using Input Coverage",
+        "authors": "Y. Kim and M. Kim",
+        "conference": "Korea Conference on Software Engineering (KCSE)",
+        "date": "Jan 2016"
       }
     ],
     "2015" : [
@@ -120,6 +263,12 @@
         "authors": "S. Moon, Y. Kim, M. Kim, S. Yoo",
         "conference": "IEEE International Conference on Software Testing, Verification and Validation (ICST)",
         "date": "April 2014"
+      },
+      {
+        "title": "Effective Concolic Testing using a Symbolic Library",
+        "authors": "Y. Park, Y. Kim, J. Cho, and M. Kim",
+        "conference": "Korea Conference on Software Engineering (KCSE)",
+        "date": "Feb 2014"
       }
 
     ],
@@ -129,6 +278,30 @@
         "authors": "Y. Kim, Y. Kim, T. Kim, G. Lee, Y. Jang, and M. Kim",
         "conference": "IEEE/ACM Automated Software Engineering (ASE) Experience track",
         "date": "Nov 2013"
+      },
+      {
+        "title": "FEAST: An Enhanced Fault Localization Technique using Probability of Test Cases Executing Faults",
+        "authors": "S. Moon, Y. Kim, M. Kim",
+        "conference": "Journal of KIISE: Software and Applications, Vol 40, No. 10",
+        "date": "Oct 2013"
+      },
+      {
+        "title": "A Comparative Case Study on Static Program Analysis Tools",
+        "authors": "Y. Kim, Y. Park, M. Kim",
+        "conference": "Journal of KIISE: Computing Practices and Letters, Vol. 19, No. 8",
+        "date": "Aug 2013"
+      },
+      {
+        "title": "CREST-BV: An Improved Concolic Testing Technique Supporting Bitwise Operations for Embedded Software",
+        "authors": "Y. Kim, M. Kim, Y. Jang",
+        "conference": "Journal of KIISE: Software and Applications, Vol. 40, No. 2",
+        "date": "Feb 2013"
+      },
+      {
+        "title" : "Improved Fault Localization Technique using Weighted Test Cases",
+        "authors" : "S. Mun, Y. Kim, M. Kim",
+        "conference" : "Korea Conference on Software Engineering (KCSE)",
+        "date" : "Jan 2013"
       }
 
     ],
@@ -156,6 +329,30 @@
         "authors": "M. Kim, Y. Kim and Y. Jang",
         "conference": "IEEE International Conference on Software Testing, Verification and Validation (ICST) Industrial track",
         "date": "April 2012"
+      },
+      {
+        "title": "Comparison of Search Strategies of KLEE Concolic Testing Tool",
+        "authors": "Y. Kim, M. Kim, Y. Kim, E. Jung",
+        "conference": "Journal of KIISE: Software and Applications, Vol. 18, No.4",
+        "date": "Apr 2012"
+      },
+      {
+        "title": "A Comparative Study of Static Analysis Tools: A Case Study on libexif by Using Coverity and Sparrow",
+        "authors": "Y. Park, Y. Kim, and M. Kim",
+        "conference": "Korea Computer Congress (KCC)",
+        "date": "Nov 2012"
+      },
+      {
+        "title": "CREST-BV: An Improved Concolic Testing Technique with Bitwise Operations Support for Embedded Software",
+        "authors": "Y. Kim, M. Kim, and Y. Jang",
+        "conference": "Korea Computer Congress(KCC)",
+        "date": "June 2012"
+      },
+      {
+        "title": "A Case Study of the Application of Dynamic Symbolic Execution to RealWorld Binary Programs",
+        "authors": "Duc Bui Hoang, Y. Kim, and M. Kim",
+        "conference": "Korea Conference on Software Engineering (KCSE)",
+        "date": "Feb 2012"
       }
     ],
     "2011" : [
@@ -188,6 +385,18 @@
         "authors": "Y. Kim, M. Kim and Y. Jang",
         "conference": "ACM SIGSOFT Foundation of Software Engineering (FSE) Industrial track",
         "date": "Sep 2011"
+      },
+      {
+        "title": "Case Study on Testing with KLEE Concolic Testing Tool",
+        "authors": "Y. Kim, Y. Kim, and M. Kim",
+        "conference": "Korea Computer Congress (KCC)",
+        "date": "Nov 2011"
+      },
+      {
+        "title": "Comparison of Test-case Generation Techniques based on Dynamic Symbolic Execution and Genetic Algorithm",
+        "authors": "Y. Kim and M. Kim",
+        "conference": "Korea Conference on Software Engineering (KCSE)",
+        "date": "Feb 2010"
       }
     ],
     "2010" : [
@@ -202,6 +411,12 @@
         "authors": "Y. Kim, M. Kim, N. Dang",
         "conference": "Grand Challenge in Verified Software Track @ Intl. Conf. on Theoretical Aspects of Computing (ICTAC) (LNCS 6255)",
         "date": "Sep 2010"
+      },
+      {
+        "title": "Comparison of Test-case Generation Tools based on Dynamic Symbolic Execution",
+        "authors": "Y. Kim and M. Kim",
+        "conference": "Koea Conference on Software Engineering (KCSE)",
+        "date": "Feb 2010"
       }
 
     ],
@@ -231,6 +446,12 @@
         "authors": "M. Kim, Y. Kim, Y. Choi, and H. Kim",
         "conference": "IEEE Intl. Conf. on Software Testing, Verification and Validation (ICST)",
         "date": "April 2008"
+      },
+      {
+        "title": "Formal Verification of a Flash Memory Device Driver through Model Checking",
+        "authors": "M. Kim, Y. Kim, and H. Kim",
+        "conference": "Korea Conference on Software Engineering (KCSE)",
+        "date": "Feb 2008"
       }
 
     ],
