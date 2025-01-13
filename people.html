@@ -163,7 +163,23 @@
               homepage.textContent = 'Homepage';
               homepage.target = '_blank';
               profileDiv.appendChild(homepage);
+              
             }
+
+            // Add research interests section
+      if (profile.research_interests && profile.research_interests.length > 0) {
+        const researchHeader = document.createElement('h3');
+        researchHeader.textContent = 'Research Interests';
+        profileDiv.appendChild(researchHeader);
+
+        const researchList = document.createElement('ul');
+        profile.research_interests.forEach(interest => {
+          const li = document.createElement('li');
+          li.textContent = interest;
+          researchList.appendChild(li);
+        });
+        profileDiv.appendChild(researchList);
+      }
 
             // Add education and experience
             const educationHeader = document.createElement('h3');

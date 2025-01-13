@@ -120,7 +120,10 @@
         .then((data) => {
           const container = document.getElementById('publication-container');
 
-          for (const year in data) {
+          // Process data in reverse order
+          const years = Object.keys(data).sort((a, b) => b - a);
+          
+          years.forEach(year => {
             // Create year section
             const yearSection = document.createElement('div');
             yearSection.classList.add('year');
@@ -149,7 +152,7 @@
 
             // Append the year section to the container
             container.appendChild(yearSection);
-          }
+          });
         })
         .catch((error) => console.error('Error loading publications:', error));
     </script>

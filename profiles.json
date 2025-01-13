@@ -4,7 +4,12 @@
       "position": "Professor, Department of Computer Science, Hanyang University",
       "email": "yunhokim@hanyang.ac.kr",
       "image": "김윤호교수님.png",
-    "homepage": "https://yunho-kim.github.io/",
+      "homepage": "https://yunho-kim.github.io/",
+      "research_interests": [
+        "Automated Software Unit/System Test Generation using Concolic Testing and Mutation Analysis",
+        "Effective Fault Localization using Mutation Analysis and Machine Learning",
+        "Applying Automated Testing and Debugging Techniques to Safety Critical Embedded SW in Industries"
+      ],
       "education": [
         "B.S (2007.02) in Computer Science, KAIST",
         "Ph.D (2017.02) in Computer Science, KAIST",

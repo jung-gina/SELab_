@@ -1,37 +1,247 @@
 {
     "2024": [
-      {
-        "title": "Maestro: The Analysis-Simulation Integrated Framework for Mixed Reality",
-        "authors": "Jingyu Lee, Hyunsoo Kim, Minjae Kim, Byung-Gon Chun, Youngki Lee",
-        "conference": "MobiSys 2024",
-        "date": "To appear"
-      },
-      {
-        "title": "Blaze: Holistic Caching for Iterative Data Processing",
-        "authors": "Won Wook Song, Jeongyoon Eo, Taegeon Um, Myeongjae Jeon, Byung-Gon Chun",
-        "conference": "EuroSys 2024",
-        "date": "April 2024"
-      }
+
     ],
     "2023": [
+
+    ],
+    "2022" : [
+
+    ],
+    "2021" : [
+
+    ],
+    "2020" : [
+
+    ],
+    "2019" : [
       {
-        "title": "Meta-Learning of Prompt Generation for Lightweight Prompt Engineering on Language-Model-as-a-Service",
-        "authors": "Hyeonmin Ha, Jihye Lee, Wookje Han, Byung-Gon Chun",
-        "conference": "EMNLP 2023 (Findings)",
-        "date": "December 2023"
+        "title": "MAESTRO: Automated Test Generation Framework for High Test Coverage and Reduced Human Effort in Automotive Industry",
+        "authors": "Y. Kim, D. Lee, J. Baek, and M. Kim",
+        "conference": "Information and Software Technology (IST)",
+        "date": "2019"
       },
       {
-        "title": "BPipe: Memory-Balanced Pipeline Parallelism for Training Large Language Models",
+        "title": "Precise Learn-to-Rank Fault Localization using Dynamic and Static Features of Target Programs",
+        "authors": "Y. Kim, S. Mun, S. Yoo, and M. Kim",
+        "conference": "ACM Transactions on Software Engineering and Methodology (TOSEM)",
+        "date": "2019"
+      },
+      {
+        "title": "Target-driven Compositional Concolic Testing with Function Summary Refinement for Effective Bug Detection",
+        "authors": "Y. Kim, S. Hong and M. Kim",
+        "conference": "ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)",
+        "date": "Aug 2019"
+      },
+      {
+        "title": "Concolic Testing for High Test Coverage and Reduced Human Effort in Automotive Industry",
+        "authors": "Y. Kim, D. Lee, J. Baek, and M. Kim",
+        "conference": "Intl. Conf. on Software Engineering (ICSE) Software Engineering In Practice (SEIP) track,",
+        "date": "May 2019"
+      }
+    ],
+    "2018" : [
+      {
+        "title": "Precise Concolic Unit Testing of C Programs with Alarm Filtering Using Symbolic Calling Contexts",
+        "authors": "Y. Kim, Y. Choi, and M. Kim",
+        "conference": "International Conference on Software Engineering (ICSE)",
+        "date": "2018"
+      },
+      {
+        "title": "Invasive Software Testing: Mutating Target Programs to Diversify Test Exploration for High Test Coverage",
+        "authors": "Y. Kim, S. Hong, B. Ko, D. Phan, and M. Kim",
+        "conference": "Mutation Workshop",
+        "date": "April 2018"
+      },
+      {
+        "title": "MUSIC: Mutation Analysis Tool with High Configurability and Extensibility",
+        "authors": "L. Phan, Y. Kim, M. Kim",
+        "conference": "ACM Transactions on Software Engineering and Methodology (TOSEM)",
+        "date": "2018"
+      }
+    ],
+    "2017" : [
+      {
+        "title": "MUSEUM: Debugging Real-World Multilingual Programs Using Mutation Analysis",
+        "authors": "S. Hong, T. Kwak, B. Lee, Y. Jeon, B. Ko, Y. Kim, M. Kim",
+        "conference": " Information and Software Technology (IST)",
+        "date": "Feb 2017"
+      }
+    ],
+    "2016" : [
+      {
+        "title": "Polaris: A Framework for Efficient and Scalable Distributed Training of Large Language Models",
         "authors": "Taebum Kim, Hyoungjoo Kim, Gyeong-In Yu, Byung-Gon Chun",
-        "conference": "ICML 2023 (Oral)",
-        "date": "July 2023"
+        "conference": "OSDI 2022",
+        "date": "July 2022"
       },
       {
         "title": "Sponge: Fast Reactive Scaling for Stream Processing with Serverless Frameworks",
         "authors": "Won Wook Song, Taegeon Um, Sameh Elnikety, Myeongjae Jeon, Byung-Gon Chun",
-        "conference": "USENIX ATC 2023",
-        "date": "July 2023"
+        "conference": "USENIX ATC 2022",
+        "date": "July 2022"
       }
+    ],
+    "2015" : [
+      {
+        "title": "Directed Test Suite Augmentation: An Empirical Investigation, Journal of Software Testing",
+        "authors": "Z. Xu, Y. Kim, M. Kim, M. Cohen, and G. Rothermel",
+        "conference": "Verification and Reliability (STVR)",
+        "date": "March 2015"
+      },
+      {
+        "title": "Sponge: Fast Reactive Scaling for Stream Processing with Serverless Frameworks",
+        "authors": "Won Wook Song, Taegeon Um, Sameh Elnikety, Myeongjae Jeon, Byung-Gon Chun",
+        "conference": "USENIX ATC 2022",
+        "date": "July 2022"
+      },
+      {
+        "title": "Mutation Based Fault Localization for Real-World Multilingual Programs",
+        "authors": "S. Hong, B. Lee, T. Kwak, Y. Jeon, B. Ko, Y. Kim, M. Kim",
+        "conference": "IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+        "date": "Nov 2015"
+      }
+    ],
+    "2014" : [
+      {
+        "title": " SAT-based Bounded Software Model Checking for Embedded Software: A Case Study",
+        "authors": "Y. Kim and M. Kim",
+        "conference": "AsiaPacific Software Engineering Conference (APSEC)",
+        "date": "Dec 2014"
+      },
+      {
+        "title": "Hybrid Directed Test Suite Augmentation: An Interleaving Framework",
+        "authors": "Y. Kim, Z. Xu, M. Kim, M. Cohen, and G. Rothermel",
+        "conference": "IEEE International Conference on Software Testing, Verification and Validation (ICST)",
+        "date": "April 2014"
+      },
+      {
+        "title": "Ask the Mutants: Mutating Faulty Programs for Fault Localization, IEEE International Conference on Software Testing",
+        "authors": "S. Moon, Y. Kim, M. Kim, S. Yoo",
+        "conference": "IEEE International Conference on Software Testing, Verification and Validation (ICST)",
+        "date": "April 2014"
+      }
+
+    ],
+    "2013" : [
+      {
+        "title": "Automated Unit Testing of Large Industrial Embedded Software using Concolic Testing",
+        "authors": "Y. Kim, Y. Kim, T. Kim, G. Lee, Y. Jang, and M. Kim",
+        "conference": "IEEE/ACM Automated Software Engineering (ASE) Experience track",
+        "date": "Nov 2013"
+      }
+
+    ],
+    "2012" : [
+      {
+        "title": "Concolic Testing of the Multi-sector Read Operation for Flash Storage Platform Software",
+        "authors": "M. Kim, Y. Kim, and Y. Choi",
+        "conference": "Formal Aspects of Computing (FACJ)",
+        "date": "2012"
+      },
+      {
+        "title": "Industrial Application of Concolic Testing Approach: A Case Study on libexif by Using CREST-BV and KLEE",
+        "authors": "Y. Kim, M. Kim, Y. Kim, and Y. Jang",
+        "conference": "Intl. Conf. on Software Engineering (ICSE), Software Engineering in Practice (SEIP) track",
+        "date": "June 2012"
+      },
+      {
+        "title": "A Scalable Distributed Concolic Testing Approach: An Empirical Evaluation",
+        "authors": "M. Kim, Y. Kim, and G. Rothermel",
+        "conference": "IEEE International Conference on Software Testing, Verification, and Validation (ICST)",
+        "date": "April 2012"
+      },
+      {
+        "title": "Industrial Application of Concolic Testing on Embedded Software: Case Studies",
+        "authors": "M. Kim, Y. Kim and Y. Jang",
+        "conference": "IEEE International Conference on Software Testing, Verification and Validation (ICST) Industrial track",
+        "date": "April 2012"
+      }
+    ],
+    "2011" : [
+      {
+        "title": "A Comparative Study of Software Model Checkers as Unit Testing Tools: An Industrial Case Study",
+        "authors": "M. Kim, Y. Kim, and H. Kim",
+        "conference": "IEEE Transactions on Software Engineering (TSE)",
+        "date": "March 2011"
+      },
+      {
+        "title": "A Hybrid Directed Test Suite Augmentation Technique",
+        "authors": "Z. Xu, Y. Kim, M. Kim and G. Rothermel",
+        "conference": "IEEE Intl.Symp. on Software Reliability Engineering (ISSRE)",
+        "date": "Nov 2011"
+      },
+      {
+        "title": "Automated Analysis of Industrial Embedded Software",
+        "authors": "M. Kim and Y. Kim",
+        "conference": "Automated Technology for Verification and Analysis (ATVA)",
+        "date": "Oct 2011"
+      },
+      {
+        "title": "SCORE: a Scalable Concolic Testing Tool for Reliable Embedded Software",
+        "authors": "Y. Kim and M. Kim",
+        "conference": "ACM SIGSOFT Foundation of Software Engineering (FSE) Tool demonstration track",
+        "date": "Sep 2011"
+      },
+      {
+        "title": "Concolic Testing on Embedded Software - Case Studies on Mobile Platform Programs",
+        "authors": "Y. Kim, M. Kim and Y. Jang",
+        "conference": "ACM SIGSOFT Foundation of Software Engineering (FSE) Industrial track",
+        "date": "Sep 2011"
+      }
+    ],
+    "2010" : [
+      {
+        "title": "Directed Test Suite Augmentation: Techniques and Tradeoffs",
+        "authors": "Z. Xu, Y. Kim, M. Kim, G. Rothermel, and M. Cohen",
+        "conference": "ACM SIGSOFT Foundation of Software Engineering (FSE)",
+        "date": "Nov 2011"
+      },
+      {
+        "title": "Scalable Distributed Concolic Testing: a Case Study on a Flash Storage Platform",
+        "authors": "Y. Kim, M. Kim, N. Dang",
+        "conference": "Grand Challenge in Verified Software Track @ Intl. Conf. on Theoretical Aspects of Computing (ICTAC) (LNCS 6255)",
+        "date": "Sep 2010"
+      }
+
+    ],
+    "2009" : [
+      {
+        "title": "Concolic Testing of the Multi-sector Read Operation for Flash Memory File System",
+        "authors": "M. Kim and Y. Kim",
+        "conference": "Intl. Conf. on Software Engineering (ICSE), Software Engineering in Practice (SEIP) track (LNCS 5902)",
+        "date": "Aug 2009"
+      }
+    ],
+    "2008" : [
+      {
+        "title": "Unit Testing of Flash Memory Device Driver through a SAT-based Model Checker",
+        "authors": "M. Kim, Y. Kim and H. Kim",
+        "conference": "IEEE/ACM Automated Software Engineering (ASE)",
+        "date": "Sep 2008"
+      },
+      {
+        "title": "Formal Verification of a Flash Memory Device Driver - an Experience Report",
+        "authors": "M. Kim, Y. Choi, Y. Kim and H. Kim",
+        "conference": "Spin Workshop (LNCS 5156)",
+        "date": "Aug 2008"
+      },
+      {
+        "title": "Pre-testing Flash Device Driver through Model Checking Techniques",
+        "authors": "M. Kim, Y. Kim, Y. Choi, and H. Kim",
+        "conference": "IEEE Intl. Conf. on Software Testing, Verification and Validation (ICST)",
+        "date": "April 2008"
+      }
+
+    ],
+    "2007" : [
+
+    ],
+    "2006" : [
+
+    ],
+    "2005" : [
+
     ]
   }
   
